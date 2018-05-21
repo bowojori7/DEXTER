@@ -1,1 +1,3 @@
-AKIAIOL4463XSH3ICT7A
+ATYJFAKIAIOL4463XSH3ICT7AIROM
+
+// This isn't active. Just an example. You have to sign up with amazon web services Polly to get the actual keys. For speech synthesis

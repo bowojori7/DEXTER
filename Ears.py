@@ -10,7 +10,8 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 dexSay = Mouth()
-BING_KEY = "ed706d100bc5471d996f49af80cf0961"
+BING_KEY_FILE = open('APIS/Bing.txt', 'r')
+BING_KEY = BING_KEY_FILE.read()
 
 class Ears():
     def __init__(self):
@@ -74,4 +75,5 @@ class Ears():
             dexRecog = self.recognizer.recognize_bing(user_speech, key=BING_KEY)
 
         dexRecog = dexRecog.lower()
+		BING_KEY_FILE.close()
         return dexRecog

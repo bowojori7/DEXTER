@@ -13,9 +13,14 @@ logger = logging.getLogger(__name__)
 class Mouth():
     def __init__(self):
         '''Initialize the Male and Female voices'''
+		
+		dex_aws_access = open('APIS/dex_aws_access.txt', 'r').read()
+		dex_aws_secret = open('APIS/dex_aws_secret.txt', 'r').read()
+		dee_aws_access = open('APIS/dee_aws_access.txt', 'r').read()
+		dee_aws_secret = open('APIS/dee_aws_secret.txt', 'r').read()
 
-        self.Dexter = boto3.client("polly", 'us-west-2', aws_access_key_id='AKIAIOL4463XSH3ICT7A', aws_secret_access_key='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')
-        self.Deedee = boto3.client("polly", 'us-west-2', aws_access_key_id='AKIAIOL4463XSH3ICT7A', aws_secret_access_key='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')
+        self.Dexter = boto3.client("polly", 'us-west-2', aws_access_key_id=dex_aws_access, aws_secret_access_key=dex_aws_secret)
+        self.Deedee = boto3.client("polly", 'us-west-2', aws_access_key_id=dee_aws_access, aws_secret_access_key=dee_aws_secret)
 
 
     def speak(self, audioString, gender, dexActive):

@@ -19,6 +19,8 @@ o	pip install win32api
 o	pip install pywinauto
 o	pip install keyboard
 
+Sign up for amazon Polly web service to get access to Dexter's voices, After getting the access keys, copy the access and secret keys into the appropriate files in the APIS/ directory and delete the comments to get Dexter's voice to work. 
+
 Start Dexter. Open command window in Dexter.py location (hold shift, right click in the folder and select ‘open command prompt window here’), Type the following into the command prompt window. 
 	‘python Dexter.py’
 On First Run, You have to select operation mode (do not worry you can change this at any time). Choose ‘always listen’ if you want Dexter to always listen to you and answer when you call his name or     choose ‘push to talk’ if you want to use a keyboard  shortcut when you need Dexter. 

@@ -2,7 +2,9 @@
 Starting out as a simple python Windows PC Personal Assistant. Helping him grow. 
 
 #.	USER GUIDE OF THE SYSTEM
+
 #.1	System Setup
+
 Install Python 3.5, this version is necessary because it is the only version of python this application has been tested on. 
 Install all the dependencies needed by the application through PIP
 -	List of dependencies
@@ -24,6 +26,7 @@ The default keyboard shortcut – ‘Control’ + ‘Caps Lock’ twice.
 
 #.2	Command List
 Guide - | means or
+
 #.2.1	Activate Dexter
 To activate Dexter or call him to attention, or give him a command you have two options. These are called operation modes:
 1.	Always Listen Mode
